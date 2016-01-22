@@ -1,78 +1,81 @@
-#
-# This file contains configuration flags to customize your site
-#
-
-# Name of your site (displayed in the header)
-name: suiyuanw
-
-# Short bio or description (displayed in the header)
-description: hello coder!
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars3.githubusercontent.com/u/10112629?v=3&u=2b302f29f1bf4f281ce3bcacd4821c72cbd3cac1&s=140
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links: https://suiyuanw.github.io
-  dribbble:
-  email: wufdongs@gmail.com
-  facebook: #suiyuanw
-  flickr: #suiyuanw
-  github: suiyuanw
-  instagram: #suiyuanw
-  linkedin: #suiyuanw
-  pinterest: #suiyuanw 
-  rss: # just type anything here for a working RSS icon
-  twitter: 
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+# Site settings
+title: wufd
+SEOTitle: Wufd
+header-img: img/common/home-bg.jpg
+email: wufdongs@gmail.com
+description: "Hello code world !"
+keyword: "wufd, suiyuanw, iOS coder"
+url: "http://suiyuanw.github.io"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus: wufd
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: #suiyuanw
+# SNS settings
+RSS: true
+weibo_username:     suiyuanw
+zhihu_username:     suiyuanw
+github_username:    suiyuanw
+#twitter_username:  suiyuanw
+#facebook_username:  suiyuanw
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: https://suiyuanw.github.io
 
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: "/suiyuanw.github.io"
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
+# Build settings
+gems: [jekyll-paginate]
+#highlighter: pygments
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-markdown: redcarpet
-highlighter: pygments
-permalink: /:title/
 
-# The release of Jekyll Now that you're using
-version: v1.1.0
 
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
 
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
-# Exclude these files from your production _site
-exclude:
-    - Gemfile
-    - Gemfile.lock
-    - LICENSE
-    - README.md
-    - CNAME
+
+# Duoshuo settings
+duoshuo_username: suiyuanw # Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics
+#ba_track_id: 5c2c47b6a361d270fd09888b94ad77ce
+# Google Analytics
+#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+#ga_domain: huangxuan.me
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "正在努力探索iOS开发的最佳实践。"
+sidebar-avatar: https://avatars3.githubusercontent.com/u/10112629?v=3&u=2b302f29f1bf4f281ce3bcacd4821c72cbd3cac1&s=140      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 0             # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Friends
+#friends: [
+#    {
+#        title: "",
+#        href: ""
+#    },{
+#        title: "",
+#        href: ""
+#    }
+#]
