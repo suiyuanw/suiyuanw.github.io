@@ -6,9 +6,6 @@ date:       2016-01-22 19:18:30
 author:     "DavidDay"
 header-img: "img/post/2015-1-20-bg.jpg"
 tags:
-    - Hello
 ---
 
-# Hello ！
-## Hello ！！
-### Hello ！！！
+Hello ！
