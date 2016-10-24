@@ -1,6 +1,6 @@
 # suiyuanw
 
-### [Info →](http://suiyuanw.github.io)
+### [Info →](http://wufd.github.io)
 
 ## Document
 
